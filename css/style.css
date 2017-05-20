@@ -1,0 +1,12 @@
+body{background-color: #000}
+#header{ width: 100%; background: transparent; z-index: 99; padding:0.25em 0 0;}
+#header .container{margin:0.5em auto 0.5em;}
+#header .icon,#header .brand-name{height: 2em;}
+#header h1 {display: block; float: left; font-weight: 300; color:#fff; font-size: 1.75em; margin: 0; padding: 0 0 0 1.15em; background: url("data:image/svg+xml;charset=UTF-8, %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' fill='%23fff' height='100' width='100'%3E%3Ccircle cx='30' cy='10' r='7'/%3E%3Ccircle cx='50' cy='10' r='7'/%3E%3Ccircle cx='70' cy='10' r='7'/%3E%3Ccircle cx='10' cy='30' r='7'/%3E%3Ccircle cx='30' cy='30' r='7'/%3E%3Ccircle cx='50' cy='30' r='7'/%3E%3Ccircle cx='70' cy='30' r='7'/%3E%3Ccircle cx='90' cy='30' r='7'/%3E%3Ccircle cx='10' cy='50' r='7'/%3E%3Ccircle cx='30' cy='50' r='7'/%3E%3Ccircle cx='50' cy='50' r='7'/%3E%3Ccircle cx='70' cy='50' r='7'/%3E%3Ccircle cx='90' cy='50' r='7'/%3E%3Ccircle cx='10' cy='70' r='7'/%3E%3Ccircle cx='30' cy='70' r='7'/%3E%3Ccircle cx='50' cy='70' r='7'/%3E%3Ccircle cx='70' cy='70' r='7'/%3E%3Ccircle cx='90' cy='70' r='7'/%3E%3Ccircle cx='30' cy='90' r='7'/%3E%3Ccircle cx='50' cy='90' r='7'/%3E%3Ccircle cx='70' cy='90' r='7'/%3E%3C/svg%3E") no-repeat center left; background-size: 24px}
+.p015-1{padding:0.15em 1em}
+.g1 {width: 100%; float: left;}
+@media screen and (min-width: 48em) {
+	.gxm1-2 {width: 50%}
+}
+
+#downloadPNG, #downloadSVG {display: none}

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Dotted</title>
+    <meta name="keywords" content="dots,points,transform,image,art,design">
+    <meta name="description" content="Transform any image into dots">
+    <meta name="author" content="Gonzalo Cervantes">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut" href="favicon.png">    
+    <link rel="apple-touch-icon" href="favicon-57.png" sizes="57x57">   
+    <link rel="apple-touch-icon" href="favicon-72.png" sizes="72x72">   
+    <link rel="apple-touch-icon" href="favicon-76.png" sizes="76x76">   
+    <link rel="apple-touch-icon" href="favicon-114.png" sizes="114x114">    
+    <link rel="apple-touch-icon" href="favicon-120.png" sizes="120x120">    
+    <link rel="apple-touch-icon" href="favicon-144.png" sizes="144x144">    
+    <link rel="apple-touch-icon" href="favicon-152.png" sizes="152x152">    
+    <link rel="apple-touch-icon" href="favicon-180.png" sizes="180x180">    
+    <link rel="mask-icon" href="icon.svg" color="#333">   
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">   
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ngui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container p015-1">
+        <h1>Dotted</h1>
+        <input id="uploadImage" type="file" name="photoimage" class="fimg1" style="display: none" />
+        <label for="uploadImage" class="xs btn btnGreen uppercase va-bottom floatRight" tabindex="1">Select image
+        </label>
+        <br class="clear">
+      </div>
+    </div>
+    <div class="container p0-1">
+      <img id="previewImg" src="images/image.svg" width="100%">
+      <div class="center">
+        <input type="range" min="5" max="80" value="40" step="5" id="range" class="m1-0" style="width: 100%; max-width: 300px">
+        <br>
+        <a class="btn btnGreen" id="downloadPNG" target="_blank" style="max-width: 200px; margin:0 auto 1em" download>Download PNG</a>
+        <a class="btn btnRed" id="downloadSVG" target="_blank" style="max-width: 200px; margin:0 auto 1em" download>Download SVG</a>
+      </div>
+    </div>
+    <script src="js/bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-99594426-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
