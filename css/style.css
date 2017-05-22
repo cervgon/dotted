@@ -11,3 +11,19 @@ body{background-color: #000}
 }
 
 #downloadPNG, #downloadSVG {display: none}
+
+#range {margin:2em 0;}
+
+/* Webkit */
+input[type=range] { -webkit-appearance: none; width: 100%; border-radius: 8px; height: 7px; border: 1px solid #bdc3c7; background-color: #fff; padding: 0; margin: 15px 0 }
+input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; background-color: #ecf0f1; border: 1px solid #bdc3c7; width: 24px; height: 24px; border-radius: 12px; cursor: pointer }
+
+/* Mozilla */
+input[type=range]::-moz-range-track { border-radius: 8px; height: 7px; border: 1px solid #bdc3c7; background-color: #fff }
+input[type=range]::-moz-range-thumb { background: #ecf0f1; border: 1px solid #bdc3c7; width: 22px; height: 22px; border-radius: 11px; cursor: pointer }
+
+/* Internet Explorer */
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper { background: transparent }
+input[type="range"]::-ms-track { border-radius: 8px; height: 7px; border: 1px solid #bdc3c7; background-color: #fff }
+input[type="range"]::-ms-thumb { background-color: #ecf0f1; border: 1px solid #bdc3c7; width: 22px; height: 22px; border-radius: 11px; cursor: pointer }
