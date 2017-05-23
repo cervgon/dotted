@@ -35,11 +35,18 @@
     <div class="container p0-1 center">
       <img id="previewImg">
       <div id="controllers">
-        <input type="range" min="5" max="80" value="40" step="5" id="range" class="m1-0" style="width: 100%; max-width: 300px">
+        <input type="range" min="5" max="75" value="40" step="5" id="range" class="m1-0" style="width: 100%; max-width: 300px">
+        <div id="blackorwhite">
+          <label class="xs" id="blackLabel">Black</label>
+          <div class="toggle black"><div class="circle"></div></div>
+          <label class="xs" id="whiteLabel">white</label>
+        </div>
         <br>
-        <a class="btn btnGreen" id="downloadPNG" target="_blank" style="max-width: 200px; margin:0 auto 1em" download>Download PNG</a>
-        <a class="btn btnRed" id="downloadSVG" target="_blank" style="max-width: 200px; margin:0 auto 1em" download>Download SVG</a>
+        <a class="xs btn btnGreen" id="downloadPNG" target="_blank" download>Download PNG</a>
+        <a class="xs btn btnRed" id="downloadSVG" target="_blank" download>Download SVG</a>
+        <br>
       </div>
+      <br>
     </div>
     <script src="js/bundle.js"></script>
     <script>

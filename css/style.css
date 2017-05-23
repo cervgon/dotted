@@ -29,8 +29,8 @@
 
 body{background-color: #111}
 #header{ width: 100%; background: transparent; z-index: 99; padding:0.25em 0 0;
-	opacity: 0;
-	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    opacity: 0;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
@@ -46,9 +46,9 @@ body{background-color: #111}
 .p015-1{padding:0.15em 1em}
 .g1 {width: 100%; float: left;}
 
-#previewImg { width: 100%; max-width: 380px; display: block; margin: 0 auto 0; box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-	opacity: 0;
-	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+#previewImg { width:100%; display: block; margin: 0 auto 0; box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    opacity: 0;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
@@ -57,8 +57,8 @@ body{background-color: #111}
     animation-fill-mode: forwards;
 }
 
-@media screen and (min-width: 48em) {
-	.gxm1-2 {width: 50%}
+@media screen and (min-width: 24em) {
+    #previewImg { width:auto; height:100%; max-height:380px;}
 }
 
 #downloadPNG, #downloadSVG {display: none}
@@ -66,23 +66,23 @@ body{background-color: #111}
 #range {margin:2em 0;}
 
 /* Webkit */
-input[type=range] { -webkit-appearance: none; width: 100%; border-radius: 8px; height: 7px; border: 1px solid #bdc3c7; background-color: #fff; padding: 0; margin: 15px 0 }
-input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; background-color: #ecf0f1; border: 1px solid #bdc3c7; width: 24px; height: 24px; border-radius: 12px; cursor: pointer }
+input[type=range] { -webkit-appearance: none; width: 100%; border-radius: 8px; height: 10px; border: 1px solid #111; background-color: #000; padding: 0; margin: 15px 0 }
+input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; background-color: #ddd; border: 1px solid #ddd; width: 24px; height: 24px; border-radius: 12px; cursor: pointer }
 
 /* Mozilla */
-input[type=range]::-moz-range-track { border-radius: 8px; height: 7px; border: 1px solid #bdc3c7; background-color: #fff }
-input[type=range]::-moz-range-thumb { background: #ecf0f1; border: 1px solid #bdc3c7; width: 22px; height: 22px; border-radius: 11px; cursor: pointer }
+input[type=range]::-moz-range-track { border-radius: 8px; height: 10px; border: 1px solid #111; background-color: #000 }
+input[type=range]::-moz-range-thumb { background: #ddd; border: 1px solid #ddd; width: 22px; height: 22px; border-radius: 11px; cursor: pointer }
 
 /* Internet Explorer */
 input[type="range"]::-ms-fill-lower,
 input[type="range"]::-ms-fill-upper { background: transparent }
-input[type="range"]::-ms-track { border-radius: 8px; height: 7px; border: 1px solid #bdc3c7; background-color: #fff }
-input[type="range"]::-ms-thumb { background-color: #ecf0f1; border: 1px solid #bdc3c7; width: 22px; height: 22px; border-radius: 11px; cursor: pointer }
+input[type="range"]::-ms-track { border-radius: 8px; height: 10px; border: 1px solid #111; background-color: #000 }
+input[type="range"]::-ms-thumb { background-color: #ddd; border: 1px solid #ddd; width: 22px; height: 22px; border-radius: 11px; cursor: pointer }
 
 
 #controllers{
-	opacity: 0;
-	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    opacity: 0;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
@@ -92,3 +92,16 @@ input[type="range"]::-ms-thumb { background-color: #ecf0f1; border: 1px solid #b
     -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
     animation-delay: 1s;
 }
+
+#blackorwhite { cursor: pointer; vertical-align: middle;}
+#blackorwhite label { display: inline-block; color:#777; margin: 0.25em 0.5em; vertical-align: top }
+.toggle { width: 2.5em; height: 1.25em; border-radius: 0.625em; background-color: #000; display: inline-block; }
+.toggle .circle { width: 1em; height: 1em; margin:0.125em 0 0 0.125em; border-radius: 0.5em; background-color: #ddd; display: block;
+-webkit-transition: margin .4s ease-in-out;
+    -moz-transition: margin .4s ease-in-out;
+    -o-transition: margin .4s ease-in-out;
+    transition: margin .4s ease-in-out;
+}
+.toggle.black .circle { margin-left: 0.125em }
+.toggle.white .circle { margin-left: 1.3em }
+
