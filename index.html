@@ -26,28 +26,27 @@
     <div id="header">
       <div class="container p015-1">
         <h1>Dotted</h1>
-        <input id="uploadImage" type="file" name="photoimage" class="fimg1" style="display: none" />
-        <label for="uploadImage" class="xs btn btnGreen uppercase va-bottom floatRight" tabindex="1">Select image
-        </label>
+        <input id="uploadImage" type="file" name="photoimage" class="fimg1" style="display: none" onclick="this.value=null" />
+        <label for="uploadImage" class="add va-bottom floatRight" tabindex="1"></label>
         <br class="clear">
       </div>
     </div>
     <img id="previewImg">
     <div class="container p0-1 center">
       <div id="controllers">
-        <input type="range" min="5" max="75" value="40" step="5" id="range" class="m1-0" style="width: 100%; max-width: 300px">
+        <input type="range" min="4" max="44" value="44" step="1" id="range" class="m1-0" style="width: 100%; max-width: 300px">
+        <hr class="transparent">
         <div id="blackorwhite">
-          <label class="xs" id="blackLabel">Black</label>
-          <div class="toggle black"><div class="circle"></div></div>
-          <label class="xs" id="whiteLabel">white</label>
+          <label class="xs" id="blackLabel">B / W</label>
+          <div id="toggle" class="toggle black"><div class="circle"></div></div>
         </div>
-        <br>
-        <a class="xs btn btnGreen" id="downloadImage" target="_blank" download>Download Image</a>
-        <a class="xs btn btnRed" id="downloadSVG" target="_blank" download>Download SVG</a>
+        <a class="btn btnGreen" id="downloadImage" target="_blank" download>PNG</a>
+        <a class="btn btnRed" id="downloadSVG" target="_blank" download>SVG</a>
         <br>
       </div>
     </div>
     <br>
+    <img id="png" width="400" style="display: none;">
     <script src="bundle.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
