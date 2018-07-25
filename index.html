@@ -26,15 +26,29 @@
     <div id="header">
       <div class="container p015-1">
         <h1>Dotted</h1>
-        <input id="uploadImage" type="file" name="photoimage" class="fimg1" style="display: none" onclick="this.value=null" />
-        <label for="uploadImage" class="add va-bottom floatRight" tabindex="1"></label>
+        <input id="uploadImage" type="file" name="photoimage" class="fimg1" style="display: none" onclick="this.value=null"/>
+        <label for="uploadImage" class="floatRight btn btnGreen" tabindex="1">Upload</label>
         <br class="clear">
+        <ul id="type">
+            <li>
+              <input type='radio' id='radio_1' name='type' value='1' checked="checked"/>
+              <label for="radio_1">Blocks</label>
+            </li>
+            <li>
+              <input type='radio' id='radio_2' name='type' value='2' />
+              <label for="radio_2">Dots</label>
+            </li>
+            <li>
+              <input type='radio' id='radio_3' name='type' value='3' />
+              <label for="radio_3">Pixels</label>
+            </li>
+        </div>
       </div>
     </div>
     <img id="previewImg">
     <div class="container p0-1 center">
       <div id="controllers">
-        <input type="range" min="4" max="44" value="44" step="1" id="range" class="m1-0" style="width: 100%; max-width: 300px">
+        <input type="range" min="4" max="48" value="24" step="1" id="range" class="m1-0" style="width: 100%; max-width: 300px">
         <hr class="transparent">
         <div id="blackorwhite">
           <label class="xs" id="blackLabel">B / W</label>
